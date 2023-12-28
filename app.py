@@ -112,16 +112,32 @@ def get_sessions_for_user(userId):
     return result.to_dict(orient="records")
 
 
+from pandas import json_normalize
+
+
 def get_chat_for_session(sessionId):
-    result = pd.DataFrame(
-        seperated_collection.find({"sessionId": sessionId}).sort(
-            {"timestamp": pymongo.ASCENDING}
-        )
+    result_cursor = seperated_collection.find({"sessionId": sessionId}).sort(
+        [("timestamp", pymongo.ASCENDING)]
     )
-    result.columns = ["chatId", "sessionId", "message", "timestamp", "type"]
-    result["sessionId"] = result["sessionId"].apply(lambda x: str(x))
-    result["chatId"] = result["chatId"].apply(lambda x: str(x))
-    return result.to_dict(orient="records")
+
+    result_list = list(result_cursor)
+
+    if result_list:
+        result_df = json_normalize(result_list)
+        result_df.columns = [
+            "_id",
+            "chatId",
+            "sessionId",
+            "message",
+            "timestamp",
+            "type",
+        ]
+        result_df["_id"] = result_df["_id"].astype(str)
+        result_df["sessionId"] = result_df["sessionId"].astype(str)
+        result_df["chatId"] = result_df["chatId"].astype(str)
+        return result_df.to_dict(orient="records")
+    else:
+        return []
 
 
 # def save_to_mongodb(user_id, message, chat_by):

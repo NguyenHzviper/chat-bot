@@ -1,85 +1,92 @@
 {
-  "intents": [
-    {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
-      ],
-      "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
-      ]
-    },
-    {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "rooms",
-      "patterns": [
-        "Which room do you have?",
-        "What kinds of room are there?",
-        "Give me room information"
-      ],
-      "responses": [
-        "We have room for 4 stuent and room for 6 student",
-        "We have room have furniture and not have funiture"
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?",
-        "How can i payment?"
-      ],
-      "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal",
-        "We accept pay by cash"
-      ]
-    },
-    {
-      "tag": "room",
-      "patterns": [
-        "How i register room?",
-        "Can i resgieter room?" 
-      ],
-      "responses": [
-        "Please contact employee for register room, Thanks you",
-        "Please send your information to Email ktx@gmail.com, we will help you"
-      ]
-    },
-    {
-      "tag": "Cost",
-      "patterns": [
-        "How much cost of room 4 stuent ?",
-        "How much cost of room 6 stuent ?",
-        "How much cost of room have furniture?"
-      ],
-      "responses": [
-        "Cost for room 4 student is 140000 with no furniture and 1100000 for room with furniture",
-        "Cost for room 6 student is 8000."
-      ]
-    }
-  ]
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hey there! Welcome to Dormitory Management Bot.",
+                "Hello! How can I assist you today?",
+                "Hi there! What can I do for you?",
+                "Hi there! How can I help you with dormitory management?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye"],
+            "responses": [
+                "Goodbye! If you have any more questions, feel free to ask.",
+                "See you later! Have a great day.",
+                "Bye! Don't hesitate to return if you need further assistance."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank's a lot!"
+            ],
+            "responses": ["You're welcome!", "Glad I could help!", "Anytime!"]
+        },
+        {
+            "tag": "register",
+            "patterns": [
+                "How can I register for the dormitory?",
+                "What is the registration process?",
+                "I want to register for the dorm."
+            ],
+            "responses": [
+                "To register for the dormitory, please visit our online portal and complete the registration form.",
+                "You can register for the dormitory by filling out the registration form on our website.",
+                "To initiate the registration process, visit our website and follow the provided instructions."
+            ]
+        },
+        {
+            "tag": "payment",
+            "patterns": [
+                "How can I pay for my dormitory fees?",
+                "What payment methods are accepted for dorm payments?",
+                "Tell me about dormitory payment options."
+            ],
+            "responses": [
+                "We accept payments through credit cards and online banking for dormitory fees.",
+                "You can pay your dormitory fees using credit cards, bank transfers, or other online payment methods.",
+                "Dormitory fees can be paid using various methods, including credit cards and online transfers."
+            ]
+        },
+        {
+            "tag": "due_date",
+            "patterns": [
+                "When is the deadline for paying dormitory fees?",
+                "Tell me about the due date for dormitory payments.",
+                "When do I need to pay my dorm fees?"
+            ],
+            "responses": [
+                "The deadline for paying dormitory fees is [due date]. Please ensure payment is made by then.",
+                "Dormitory fees must be paid by [due date]. Late payments may incur additional charges.",
+                "The due date for dormitory fee payments is [due date]. Please make sure to pay on time."
+            ]
+        },
+        {
+            "tag": "services",
+            "patterns": [
+                "What services are offered in the dormitory?",
+                "Tell me about the amenities in the dorm.",
+                "List dormitory services and facilities."
+            ],
+            "responses": [
+                "Our dormitory offers a range of services, including laundry facilities, common rooms, and 24/7 security.",
+                "Amenities in the dorm include Wi-Fi, study areas, and recreational spaces for students.",
+                "Dormitory services include [list of services]. Feel free to ask if you need more details about any specific service."
+            ]
+        }
+    ]
 }
