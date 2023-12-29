@@ -3,89 +3,93 @@
         {
             "tag": "greeting",
             "patterns": [
-                "Hi",
-                "Hey",
-                "How are you",
-                "Is anyone there?",
-                "Hello",
-                "Good day"
+                "Chào",
+                "Xin chào",
+                "Bạn khỏe không?",
+                "Có ai ở đây không?",
+                "Xin chào",
+                "Chào buổi sáng"
             ],
             "responses": [
-                "Hey there! Welcome to Dormitory Management Bot.",
-                "Hello! How can I assist you today?",
-                "Hi there! What can I do for you?",
-                "Hi there! How can I help you with dormitory management?"
+                "Chào bạn! Chào mừng đến với Bot Quản lý Ký túc xá.",
+                "Xin chào! Làm thế nào tôi có thể giúp bạn hôm nay?",
+                "Chào bạn! Tôi có thể giúp gì cho bạn?",
+                "Xin chào bạn! Tôi có thể giúp gì cho bạn trong quản lý ký túc xá?"
             ]
         },
         {
             "tag": "goodbye",
-            "patterns": ["Bye", "See you later", "Goodbye"],
+            "patterns": ["Tạm biệt", "Hẹn gặp lại", "Tạm biệt"],
             "responses": [
-                "Goodbye! If you have any more questions, feel free to ask.",
-                "See you later! Have a great day.",
-                "Bye! Don't hesitate to return if you need further assistance."
+                "Tạm biệt! Nếu bạn có thêm câu hỏi, đừng ngần ngại hỏi.",
+                "Hẹn gặp lại! Chúc bạn một ngày tốt lành.",
+                "Tạm biệt! Đừng ngần ngại quay lại nếu bạn cần sự giúp đỡ thêm."
             ]
         },
         {
             "tag": "thanks",
             "patterns": [
-                "Thanks",
-                "Thank you",
-                "That's helpful",
-                "Thank's a lot!"
+                "Cảm ơn",
+                "Xin cảm ơn",
+                "Rất hữu ích",
+                "Cảm ơn nhiều!"
             ],
-            "responses": ["You're welcome!", "Glad I could help!", "Anytime!"]
+            "responses": [
+                "Không có gì!",
+                "Rất vui được giúp bạn!",
+                "Bất cứ lúc nào!"
+            ]
         },
         {
             "tag": "register",
             "patterns": [
-                "How can I register for the dormitory?",
-                "What is the registration process?",
-                "I want to register for the dorm."
+                "Làm thế nào để đăng ký ký túc xá?",
+                "Quy trình đăng ký như thế nào?",
+                "Tôi muốn đăng ký ký túc xá."
             ],
             "responses": [
-                "To register for the dormitory, please visit our online portal and complete the registration form.",
-                "You can register for the dormitory by filling out the registration form on our website.",
-                "To initiate the registration process, visit our website and follow the provided instructions."
+                "Để đăng ký ký túc xá, vui lòng truy cập trang web của chúng tôi và điền vào mẫu đăng ký.",
+                "Bạn có thể đăng ký ký túc xá bằng cách điền vào mẫu đăng ký trên trang web của chúng tôi.",
+                "Để bắt đầu quá trình đăng ký, hãy truy cập trang web của chúng tôi và làm theo hướng dẫn được cung cấp."
             ]
         },
         {
             "tag": "payment",
             "patterns": [
-                "How can I pay for my dormitory fees?",
-                "What payment methods are accepted for dorm payments?",
-                "Tell me about dormitory payment options."
+                "Làm thế nào để thanh toán phí ký túc xá?",
+                "Phương thức thanh toán nào được chấp nhận cho việc thanh toán ký túc xá?",
+                "Hãy nói về các phương thức thanh toán ký túc xá."
             ],
             "responses": [
-                "We accept payments through credit cards and online banking for dormitory fees.",
-                "You can pay your dormitory fees using credit cards, bank transfers, or other online payment methods.",
-                "Dormitory fees can be paid using various methods, including credit cards and online transfers."
+                "Chúng tôi chấp nhận thanh toán qua thẻ tín dụng và ngân hàng trực tuyến cho phí ký túc xá.",
+                "Bạn có thể thanh toán phí ký túc xá bằng thẻ tín dụng, chuyển khoản ngân hàng hoặc các phương thức thanh toán trực tuyến khác.",
+                "Phí ký túc xá có thể thanh toán bằng nhiều cách, bao gồm thẻ tín dụng và chuyển khoản trực tuyến."
             ]
         },
         {
             "tag": "due_date",
             "patterns": [
-                "When is the deadline for paying dormitory fees?",
-                "Tell me about the due date for dormitory payments.",
-                "When do I need to pay my dorm fees?"
+                "Khi nào là hạn chót thanh toán phí ký túc xá?",
+                "Hãy nói về ngày đáo hạn thanh toán ký túc xá.",
+                "Tôi cần thanh toán phí ký túc xá khi nào?"
             ],
             "responses": [
-                "The deadline for paying dormitory fees is [due date]. Please ensure payment is made by then.",
-                "Dormitory fees must be paid by [due date]. Late payments may incur additional charges.",
-                "The due date for dormitory fee payments is [due date]. Please make sure to pay on time."
+                "Hạn chót thanh toán phí ký túc xá là [ngày đáo hạn]. Vui lòng đảm bảo thanh toán đúng hạn.",
+                "Phí ký túc xá phải được thanh toán trước ngày [ngày đáo hạn]. Thanh toán muộn có thể phải chịu phí bổ sung.",
+                "Ngày đáo hạn thanh toán phí ký túc xá là [ngày đáo hạn]. Hãy đảm bảo thanh toán đúng hạn."
             ]
         },
         {
             "tag": "services",
             "patterns": [
-                "What services are offered in the dormitory?",
-                "Tell me about the amenities in the dorm.",
-                "List dormitory services and facilities."
+                "Các dịch vụ nào được cung cấp tại ký túc xá?",
+                "Hãy nói về tiện ích trong ký túc xá.",
+                "Liệt kê các dịch vụ và tiện ích của ký túc xá."
             ],
             "responses": [
-                "Our dormitory offers a range of services, including laundry facilities, common rooms, and 24/7 security.",
-                "Amenities in the dorm include Wi-Fi, study areas, and recreational spaces for students.",
-                "Dormitory services include [list of services]. Feel free to ask if you need more details about any specific service."
+                "Ký túc xá của chúng tôi cung cấp một loạt các dịch vụ, bao gồm tiện nghi giặt là, phòng chung, và bảo vệ 24/7.",
+                "Các tiện ích trong ký túc xá bao gồm Wi-Fi, khu vực học, và không gian giải trí cho sinh viên.",
+                "Các dịch vụ của ký túc xá bao gồm [danh sách dịch vụ]. Hãy yên tâm hỏi nếu bạn cần thêm thông tin về bất kỳ dịch vụ cụ thể nào."
             ]
         }
     ]
